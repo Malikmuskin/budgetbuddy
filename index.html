@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BudgetBuddy – Expense Tracker</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>BudgetBuddy</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="balance">
+          <h3>Total Balance</h3>
+          <p>₹45,000</p>
+        </div>
+        <div class="profile">
+          <span class="username">Hello, Malik</span>
+          <img src="https://via.placeholder.com/40" alt=""/>
+        </div>
+      </header>
+
+      <!-- Overview Cards -->
+      <section class="overview-cards">
+        <div class="card green">
+          <h4>Income</h4>
+          <p>₹60,000</p>
+        </div>
+        <div class="card red">
+          <h4>Expenses</h4>
+          <p>₹15,000</p>
+        </div>
+        <div class="card yellow">
+          <h4>Savings</h4>
+          <p>75%</p>
+        </div>
+        <div class="card">
+          <h4>Top Spending</h4>
+          <p>Food</p>
+        </div>
+      </section>
+
+      <!-- Transaction Table -->
+      <section class="transactions">
+        <h3>Transaction Log</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Category</th>
+              <th>Amount</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aug 8</td>
+              <td>Salary</td>
+              <td class="income">+₹50,000</td>
+              <td>Income</td>
+            </tr>
+            <tr>
+              <td>Aug 9</td>
+              <td>Groceries</td>
+              <td class="expense">-₹2,000</td>
+              <td>Expense</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Spending Breakdown -->
+      <section class="breakdown">
+        <h3>Spending Breakdown</h3>
+        <div class="bar">
+          <span>Food</span>
+          <div class="progress red" style="width: 60%"></div>
+        </div>
+        <div class="bar">
+          <span>Home</span>
+          <div class="progress yellow" style="width: 55%"></div>
+        </div>
+        <div class="bar">
+          <span>electricity</span>
+          <div class="progress blue" style="width: 40%"></div>
+        </div>
+        <div class="bar">
+          <span>tours</span>
+          <div class="progress green" style="width: 30%"></div>
+        </div>
+        <div class="bar">
+          <span>Transport</span>
+          <div class="progress pink" style="width: 25%"></div>
+        </div>
+        <div class="bar">
+          <span>Bills</span>
+          <div class="progress black" style="width: 15%"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
